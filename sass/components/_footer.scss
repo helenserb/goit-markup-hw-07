@@ -1,0 +1,123 @@
+.footer{
+    padding: 60px 0;
+    background-color: var(--secondary-bcg-color);
+}
+.footer-wrap{
+    display: flex;
+    align-items: baseline;
+}
+.adress-wrap{
+    margin-right: 70px;
+}
+.dark-theme{
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: var(--white-text-color);
+}
+
+.address-list-item:not(:last-child){
+    margin-bottom: 9px;
+}
+.address{
+    line-height: 1.71;
+}
+.address-link{
+    color: var(--white-text-color);
+}
+.contact-link-footer{
+    color: var(--contacts-text-color);
+}
+.address:hover,
+.address:focus{
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.14;
+    color: var(--white-text-color);
+}
+.social-footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-footer-icon{
+    fill: var(--white-text-color);
+}
+.subscribe-form{
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+.subscribe-label{
+    display: flex;
+    flex-direction: column;
+        
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+.subscribe-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.subscribe-field{
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 16px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--contacts-text-color);
+    background-color: inherit;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-field:hover,
+.subscribe-field:focus{
+    border-color: var(--accent-color);
+}
+.subscribe-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: 12px;
+    
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: 2px;
+    border-radius: 4px;
+    border-color: var(--accent-color);
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-send-icon {
+    height: 24px;
+    margin-left: 10px;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus
+.subscribe-btn:active {
+    background-color: var(--btn-active);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
