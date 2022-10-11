@@ -9,13 +9,19 @@
 .adress-wrap{
     margin-right: 70px;
 }
-
-
-.address-list-item:not(:last-child){
+.address-list-item{
+    &:not(:last-child){
     margin-bottom: 9px;
+    }
 }
 .address{
     line-height: 1.71;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 .address-link{
     color: var(--white-text-color);
@@ -23,11 +29,7 @@
 .contact-link-footer{
     color: var(--contacts-text-color);
 }
-.address:hover,
-.address:focus{
-    color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .join{
     display: block;
@@ -55,9 +57,7 @@
     color: var(--white-text-color);
 }
 .subscribe-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     margin-top: 20px;
 }
 .subscribe-field{
@@ -78,11 +78,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-field:hover,
-.subscribe-field:focus{
+
+    &:hover,
+    &:focus{
     border-color: var(--accent-color);
+    }
 }
+
 .subscribe-btn{
     display: flex;
     align-items: center;
@@ -104,15 +106,15 @@
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+    &:hover,
+    &:focus
+    &:active {
+    background-color: var(--btn-active);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
 .subscribe-send-icon {
     height: 24px;
     margin-left: 10px;
-}
-.subscribe-btn:hover,
-.subscribe-btn:focus
-.subscribe-btn:active {
-    background-color: var(--btn-active);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
